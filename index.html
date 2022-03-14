@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player Project</title>
+
+	<!-- Link for Font awesome icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+	<!-- Link for Basic css file -->
+	<link rel="stylesheet" type="text/css" href="basic-css.css">
+
+	<!-- Link for music player(Page 1) css file -->
+	<link rel="stylesheet" type="text/css" href="music-player-project-css.css">
+
+	<!-- Link for javascipt file -->
+	<script src="basic-javascript.js"></script>
+</head>
+
+<!-- Body -->
+<body>
+	<!-- Navigation bar -->
+	<nav id="navbar" class="flex-row-center">
+
+		<!-- Logo -->
+		<div id="logo">
+			<img src="codingninja-logo.png">
+		</div>
+
+		<!-- Page Title - "Favourite" -->
+		<div id="head-fav">
+			Favourites
+		</div>
+
+		<!-- Search section -->
+		<div id="search" class="flex-row-center">
+			<button id="lens"><i class="fas fa-search"></i></button>
+			<input type="input" placeholder="search">
+			<button id="microphone"><i class="fas fa-microphone"></i></button>
+		</div>
+
+		<!-- Notification -->
+		<div id="notification">
+			<div id="red-notification"></div>
+			<button><i class="fas fa-bell"></i></button>
+		</div>
+
+		<!-- Profile Picture -->
+		<div id="profile-photo">
+			<img src="https://th.bing.com/th/id/OIP.mZrukojnJQoYH-qM5dhrAgHaHa?pid=ImgDet&rs=1">
+		</div>
+	</nav>
+
+	<!-- Main Section -->
+	<section class="inline-block">
+		<!-- carousel -->
+		<div id="carousel">
+			<!-- carousel Image Left -->
+			<div class="carousel-images" id="left">
+				<img src="https://th.bing.com/th/id/OIP.OVp7Y53l9l10HpLK2dMeMwHaEK?pid=ImgDet&rs=1">
+			</div>
+			<!-- carousel Image Right -->
+			<div class="carousel-images" id="right">
+				<img src="https://th.bing.com/th/id/OIP.OVp7Y53l9l10HpLK2dMeMwHaEK?pid=ImgDet&rs=1">
+			</div>
+			<!-- carousel Image Center -->
+			<div class="carousel-images" id="center">
+				<img src="https://th.bing.com/th/id/OIP.OVp7Y53l9l10HpLK2dMeMwHaEK?pid=ImgDet&rs=1">
+			</div>
+		</div>
+
+		<!-- Latest Release -->
+		<div id="latest-release">
+			<!-- Latest Release- title-->
+			<h4>Latest Release</h4>
+			<!-- Latest Release- elements -->
+			<div id="latest-release-onism">
+				<!-- Latest Release- element -1 -->
+				<div class="flex">
+					<!-- Latest Release- image -->
+					<div class="onism-img">
+						<button class="play-button-1" id="play" onclick="bottomMusicPlayer1()" ><i class="fas fa-play"></i></button>
+						<button class="play-button-1" id="pause" onclick="bottomMusicPlayer1()" ><i class="fas fa-pause"></i></button>
+					</div>
+					<!-- Latest Release- song description -->
+					<div class="onism-dec">
+						<span>Onism</span>
+						<div style="color:lightgrey">AUG 11,2017</div>
+					</div>
+					<!-- Dropdown -->
+					<div class="w-30 float-right" style="width:20%">
+						<div class="Onism-button"><i class="fas fa-ellipsis-h"></i></div>
+						<ul class="dropdown-content">
+							<li><i class="fas fa-play"></i>Play Now</li>
+							<li><i class="fas fa-plus"></i>Add To Queue</li>
+							<li><i class="fas fa-cart-plus"></i>Add To Favourites</li>
+							<li><i class="fas fa-info-circle"></i>Get Info</li>
+						</ul>
+						<div style="color:lightgrey">4:44</div>
+					</div>
+				</div>
+				<!-- Latest Release- element -2 -->
+				<div class="flex">
+					<!-- Latest Release- image -->
+					<div class="onism-img">
+						<button class="play-button-1" id="play" onclick="bottomMusicPlayer1()" ><i class="fas fa-play"></i></button>
+						<button class="play-button-1" id="pause" onclick="bottomMusicPlayer1()" ><i class="fas fa-pause"></i></button>
+					</div>
+					<!-- Latest Release- song description -->
+					<div class="onism-dec">
+						<span>Onism</span>
+						<div style="color:lightgrey">AUG 11,2017</div>
+					</div>
+					<!-- Dropdown -->
+					<div class="w-30 float-right" style="width:20%">
+						<div class="Onism-button"><i class="fas fa-ellipsis-h"></i></div>
+						<ul class="dropdown-content">
+							<li><i class="fas fa-play"></i>Play Now</li>
+							<li><i class="fas fa-plus"></i>Add To Queue</li>
+							<li><i class="fas fa-cart-plus"></i>Add To Favourites</li>
+							<li><i class="fas fa-info-circle"></i>Get Info</li>
+						</ul>
+						<div style="color:lightgrey">4:44</div>
+					</div>
+				</div>
+				<!-- Latest Release- element -3 -->
+				<div class="flex">
+					<!-- Latest Release- image -->
+					<div class="onism-img">
+						<button class="play-button-1" id="play" onclick="bottomMusicPlayer1()" ><i class="fas fa-play"></i></button>
+						<button class="play-button-1" id="pause" onclick="bottomMusicPlayer1()" ><i class="fas fa-pause"></i></button>
+					</div>
+					<!-- Latest Release- song description -->
+					<div class="onism-dec">
+						<span>Onism</span>
+						<div style="color:lightgrey">AUG 11,2017</div>
+					</div>
+					<!-- Dropdown -->
+					<div class="w-30 float-right" style="width:20%">
+						<div class="Onism-button"><i class="fas fa-ellipsis-h"></i></div>
+						<ul class="dropdown-content">
+							<li><i class="fas fa-play"></i>Play Now</li>
+							<li><i class="fas fa-plus"></i>Add To Queue</li>
+							<li><i class="fas fa-cart-plus"></i>Add To Favourites</li>
+							<li><i class="fas fa-info-circle"></i>Get Info</li>
+						</ul>
+						<div style="color:lightgrey">4:44</div>
+					</div>
+				</div>
+				<!-- Latest Release- element -4 -->
+				<div class="flex">
+					<!-- Latest Release- image -->
+					<div class="onism-img">
+						<button class="play-button-1" id="play" onclick="bottomMusicPlayer1()" ><i class="fas fa-play"></i></button>
+						<button class="play-button-1" id="pause" onclick="bottomMusicPlayer1()" ><i class="fas fa-pause"></i></button>
+					</div>
+					<!-- Latest Release- song description -->
+					<div class="onism-dec">
+						<span>Onism</span>
+						<div style="color:lightgrey">AUG 11,2017</div>
+					</div>
+					<!-- Dropdown -->
+					<div class="w-30 float-right" style="width:20%">
+						<div class="Onism-button"><i class="fas fa-ellipsis-h"></i></div>
+						<ul class="dropdown-content">
+							<li><i class="fas fa-play"></i>Play Now</li>
+							<li><i class="fas fa-plus"></i>Add To Queue</li>
+							<li><i class="fas fa-cart-plus"></i>Add To Favourites</li>
+							<li><i class="fas fa-info-circle"></i>Get Info</li>
+						</ul>
+						<div style="color:lightgrey">4:44</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Popular Artist -->
+		<div id="popular-artist">
+			<!-- Popular Artist-Title -->
+			<h4>Popular Artist</h4>
+			<!-- Popular Artist- elements -->
+			<div class="flex-row-center">
+				<!-- Popular Artist- element 1 -->
+				<div class="popular-artist-names">
+					<!-- Popular Artist- Image -->
+					<img class="box-shadow" src="https://th.bing.com/th/id/OIP.ZgM8meFdMIlJLcOq3_y_CAHaF3?w=190&h=180&c=7&o=5&dpr=1.5&pid=1.7">
+					<div>
+						Ed Sheeran
+					</div>
+				</div>
+				<!-- Popular Artist- element 2 -->
+				<div class="popular-artist-names" id="single-player">
+					<!-- Popular Artist- Image -->
+					<img class="box-shadow" src="https://th.bing.com/th/id/OIP.Xx9MluBr0_p5NgHhshsSZAHaHZ?pid=ImgDet&rs=1">
+					<button type="button" class="button-single-player" onclick="RedirectToPage2()" ><i style="color:white" class="fas fa-play"></i></button>
+					<div>
+						ColdPlay
+					</div>
+				</div>
+				<!-- Popular Artist- element 3 -->
+				<div class="popular-artist-names">
+					<!-- Popular Artist- Image -->
+					<img class="box-shadow" src="https://th.bing.com/th/id/OIP.EY21aVTX85UNLViFu-s4RAHaHZ?w=200&h=199&c=7&o=5&dpr=1.5&pid=1.7">
+					<div>
+						Zayn
+					</div>
+				</div>
+				<!-- Popular Artist- element 4 -->
+				<div class="popular-artist-names">
+					<!-- Popular Artist- Image -->
+					<img class="box-shadow" src="https://th.bing.com/th/id/OIP.-ZFkV2djiBt1BHoKIEP2ugHaHa?w=204&h=204&c=7&o=5&dpr=1.5&pid=1.7">
+					<div>
+						Charlie Puth
+					</div>
+				</div>
+				<!-- Popular Artist- element 5 -->
+				<div class="popular-artist-names">
+					<!-- Popular Artist- Image -->
+					<img class="box-shadow" src="https://th.bing.com/th/id/OIP.mJqsWLL6Wnkc0Pphpxdc2QHaHa?pid=ImgDet&rs=1">
+					<div>
+						Imagine Dragons
+					</div>
+				</div>
+				<!-- Popular Artist- element 6 -->
+				<div class="popular-artist-names">
+					<!-- Popular Artist- Image -->
+					<img class="box-shadow" src="https://th.bing.com/th/id/OIP.A_jpZeEnN9VRRbtN6qJMlQHaHa?pid=ImgDet&rs=1">
+					<div>
+						Bruno Mars
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Categories -->
+		<div id="categories-head">
+			<!-- Categories elements -->
+			<div class="flex-row-center" id="categories">
+				<!-- Categories element - 1 -->
+				<div>
+					<!-- Categories Image -->
+					<img class="box-shadow" src="https://media.istockphoto.com/vectors/banner-for-music-radio-with-golden-microphone-vector-id1162957336?b=1&k=6&m=1162957336&s=612x612&w=0&h=3JSeAIwc16u1pVJvXOJjoD_uTqsco7xDBCpx_GzVbJw=" style="border-radius:0%;">
+					<div class="categories-name">
+						Radio
+					</div>
+				</div>
+				<!-- Categories element - 2 -->
+				<div>
+					<!-- Categories Image -->
+					<img class="box-shadow" src="https://img.floweraura.com/sites/default/files/Pure-Love-100-red-roses-romantic-bouquet_0.jpg">
+					<div class="categories-name">
+						Love
+					</div>
+				</div>
+				<!-- Categories element - 3 -->
+				<div>
+					<!-- Categories Image -->
+					<img class="box-shadow" src="https://www.ligo.co.uk/media/catalog/product/cache/1/image/1500x/9df78eab33525d08d6e5fb8d27136e95/p/u/pure-evoke_h6-2.jpg">
+					<div class="categories-name">
+						Retro
+					</div>
+				</div>
+				<!-- Categories element - 4 -->
+				<div>
+					<!-- Categories Image -->
+					<img class="box-shadow" src="https://i.scdn.co/image/214657e6323d425c901b0153a5281e38c4a7a1f0">
+					<div class="categories-name">
+						Workout
+					</div>
+				</div>
+				<!-- Categories element - 5 -->
+				<div>
+					<!-- Categories Image -->
+					<img class="box-shadow" src="https://images.vexels.com/media/users/3/145816/isolated/preview/7616b64374d1ecc318e9d638807c4d61-rock-music-sign-logo-by-vexels.png">
+					<div class="categories-name">
+						Rock
+					</div>
+				</div>
+				<!-- Categories element - 6 -->
+				<div>
+					<!-- Categories Image -->
+					<img class="box-shadow" src="https://th.bing.com/th/id/OIP.yJCs_lsoux0rnRkfbaaMogHaHa?pid=ImgDet&rs=1">
+					<div class="categories-name">
+						Pop
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- Party-Electronic-Roadtrip -->
+		<div class="flex-row-center" id="party-electronic-road">
+			<!-- Party-Electronic-Roadtrip Element -1 -->
+			<div class="party-electronic-road-img" style="background-image: url('https://www.beachhouserehabcenter.com/wp-content/uploads/2018/03/Sober-Dance-Party.jpg')">
+				<!-- Party-Electronic-Roadtrip Name -->
+				<p class="song-types">
+					Party
+				</p>
+			</div>
+			<!-- Party-Electronic-Roadtrip Element -2 -->
+			<div class="party-electronic-road-img" style="background-image: url('https://th.bing.com/th/id/OIP.AF_3BlM_aeGOGZT-xJyqIAHaFU?pid=ImgDet&rs=1')">
+				<!-- Party-Electronic-Roadtrip Name -->
+				<p class="song-types">
+					Electronic
+				</p>
+			</div>
+			<!-- Party-Electronic-Roadtrip Element -3 -->
+			<div class="party-electronic-road-img" style="background-image: url('https://th.bing.com/th/id/OIP.glWGUw599BCp-VbqCjUkYwHaE8?pid=ImgDet&rs=1')">
+				<!-- Party-Electronic-Roadtrip Name -->
+				<p class="song-types">
+					Road Trip
+				</p>
+			</div>
+		</div>
+
+		<!-- Latest Hindi -->
+		<div class="latest">
+			<!-- Latest Hindi- Title -->
+			<h4>Latest Hindi</h4>
+			<!-- Latest Hindi- elements -->
+			<div class="flex-row-center">
+				<!-- Latest Hindi- element - 1 -->
+				<div class="latest-names">
+					<!-- Latest Hindi- image -->
+					<img class="box-shadow"src="https://i.pinimg.com/originals/a4/a2/d4/a4a2d4ef2b545973a15b5cf6934d0373.jpg">
+					<span>Onism</span>
+					<div style="color:lightgrey">AUG 11,2017</div>
+				</div>
+				<!-- Latest Hindi- element - 2 -->
+				<div class="latest-names">
+					<!-- Latest Hindi- image -->
+					<img class="box-shadow" src="https://i.etsystatic.com/6676449/r/il/14e0e4/905497807/il_570xN.905497807_b6g7.jpg">
+					<span>Onism</span>
+					<div style="color:lightgrey">AUG 11,2017</div>
+				</div>
+				<!-- Latest Hindi- element - 3 -->
+				<div class="latest-names">
+					<!-- Latest Hindi- image -->
+					<img class="box-shadow" src="https://i.pinimg.com/originals/d4/3e/bd/d43ebd65ee3de17796d341291a8e15f6.jpg">
+					<span>Onism</span>
+					<div style="color:lightgrey">AUG 11,2017</div>
+				</div>
+				<!-- Latest Hindi- element - 4 -->
+				<div class="latest-names">
+					<!-- Latest Hindi- image -->
+					<img class="box-shadow" src="https://www.gardendesign.com/pictures/images/900x705Max/dream-team-s-portland-garden_6/paradiso-pink-mum-fall-flower-proven-winners_14469.jpg">
+					<span>Onism</span>
+					<div style="color:lightgrey">AUG 11,2017</div>
+				</div>
+				<!-- Latest Hindi- element - 5 -->
+				<div class="latest-names">
+					<!-- Latest Hindi- image -->
+					<img class="box-shadow" src="https://previews.123rf.com/images/valliakulaeva/valliakulaeva1807/valliakulaeva180700009/106355731-vector-clipart-sunflower-flower-a-hand-drawn-image-for-insertion-into-a-document-a-website-a-present.jpg">
+					<span>Onism</span>
+					<div style="color:lightgrey">AUG 11,2017</div>
+				</div>
+				<!-- Latest Hindi- element - 6 -->
+				<div class="latest-names">
+					<!-- Latest Hindi- image -->
+					<img class="box-shadow" src="https://site-files.fiftyflowers.com/FiftyFlowers/Image/Product/Rainbow-Payaso-350_8d0dd85d.jpg">
+					<span>Onism</span>
+					<div style="color:lightgrey">AUG 11,2017</div>
+				</div>
+			</div>
+		</div>
+		<!-- Latest English -->
+		<div class="latest">
+			<!-- Latest English- Title -->
+			<h4>Latest English</h4>
+			<!-- Latest English- elements -->
+			<div class="flex-row-center">
+				<!-- Latest English- element - 1 -->
+				<div class="latest-names">
+					<!-- Latest English- image -->
+					<img class="box-shadow" src="https://i.pinimg.com/originals/a4/a2/d4/a4a2d4ef2b545973a15b5cf6934d0373.jpg">
+					<span>Onism</span>
+					<div style="color:lightgrey">AUG 11,2017</div>
+				</div>
+				<!-- Latest English- element - 2 -->
+				<div class="latest-names">
+					<!-- Latest English- image -->
+					<img class="box-shadow" src="https://i.etsystatic.com/6676449/r/il/14e0e4/905497807/il_570xN.905497807_b6g7.jpg">
+					<span>Onism</span>
+					<div style="color:lightgrey">AUG 11,2017</div>
+				</div>
+				<!-- Latest English- element - 3 -->
+				<div class="latest-names">
+					<!-- Latest English- image -->
+					<img class="box-shadow" src="https://i.pinimg.com/originals/d4/3e/bd/d43ebd65ee3de17796d341291a8e15f6.jpg">
+					<span>Onism</span>
+					<div style="color:lightgrey">AUG 11,2017</div>
+				</div>
+				<!-- Latest English- element - 4 -->
+				<div class="latest-names">
+					<!-- Latest English- image -->
+					<img class="box-shadow" src="https://www.gardendesign.com/pictures/images/900x705Max/dream-team-s-portland-garden_6/paradiso-pink-mum-fall-flower-proven-winners_14469.jpg">
+					<span>Onism</span>
+					<div style="color:lightgrey">AUG 11,2017</div>
+				</div>
+				<!-- Latest English- element - 5 -->
+				<div class="latest-names">
+					<!-- Latest English- image -->
+					<img class="box-shadow" src="https://previews.123rf.com/images/valliakulaeva/valliakulaeva1807/valliakulaeva180700009/106355731-vector-clipart-sunflower-flower-a-hand-drawn-image-for-insertion-into-a-document-a-website-a-present.jpg">
+					<span>Onism</span>
+					<div style="color:lightgrey">AUG 11,2017</div>
+				</div>
+				<!-- Latest English- element - 6 -->
+				<div class="latest-names">
+					<!-- Latest English- image -->
+					<img class="box-shadow" src="https://site-files.fiftyflowers.com/FiftyFlowers/Image/Product/Rainbow-Payaso-350_8d0dd85d.jpg">
+					<span>Onism</span>
+					<div style="color:lightgrey">AUG 11,2017</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- Aside Section -->
+	<!-- My Playlist -->
+	<aside class="inline-block">
+		<!-- My Playlist-header -->
+		<h3>
+			My Playlist
+			<!-- QUEUE Dropdown -->
+			<span id="queue-dropdown" class="float-right">
+				Queue&nbsp;
+				<i class="fas fa-caret-down"></i>
+				<!-- QUEUE Dropdown-content -->
+				<ul class="queue-dropdown-content">
+					<li>Playlists</li>
+					<li>Favourite Song</li>
+				</ul>
+			</span>
+		</h3>
+		<!-- My PLaylists elements -->
+		<ol id="list-contents" class="flex-row-center">
+			<!-- My PLaylists element No. 1 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- My PLaylists element No. 2 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- My PLaylists element No. 3 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- My PLaylists element No. 4 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- My PLaylists element No. 5 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- My PLaylists element No. 6 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- My PLaylists element No. 7 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- My PLaylists element No. 8 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li><!-- My PLaylists element No. 9 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- My PLaylists element No. 10 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- My PLaylists element No. 11 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- My PLaylists element No. 12 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+		</ol>
+		<!-- Youtube Video -->
+		<div id="youtube-video">
+			<iframe autoplay width="320" height="200" src="https://www.youtube.com/embed/bR8sE9ubyTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+			<iframe width="320" height="200" src="https://www.youtube.com/embed/v2-9rIL_f4w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe width="320" height="200" src="https://www.youtube.com/embed/dyRsYk0LyA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</aside>
+
+	<!-- Bottom Music Player -->
+	<footer id="bottom-music-player">
+		<!-- Song Name and song controls -->
+		<div id="bottom-music-player-section" class="inline-block">
+			<div id="song-head" class="inline-block">
+				<!-- Song Image -->
+				<img src="https://th.bing.com/th/id/OIP.SQvqW6zwylozA3VkXLM4fAHaHa?w=172&h=180&c=7&o=5&dpr=1.5&pid=1.7">
+				<!-- Song Description -->
+				<div class="inline-block">
+					<marquee width="100%" behavior="scroll" direction="left">Imagine By John </marquee>
+					<div style="color:lightgrey">John Lennon</div>
+				</div>
+				<!-- Icons of heart and Ban -->
+				<div class="inline-block float-right" id="heart-ban">
+					<i class="far fa-heart"></i>&nbsp;<i class="fas fa-ban"></i>
+				</div>
+			</div>
+			<!-- Icons for SONG control and music duration-->
+			<div id="song-play" class="inline-block">
+				<!-- Icons for SONG control -->
+				<div id="song-controls">
+					<i class="fas fa-random"></i>
+					<i class="fas fa-step-backward"></i>
+					<i class="far fa-pause-circle"></i>
+					<i class="fas fa-step-forward"></i>
+					<i class="fas fa-sync"></i>
+				</div>
+				<!-- Play audio on click -->
+				<audio id="audio" src="https://mp3song.fm/files/mp3/128/English/19325/Dynamite%20-%20(Mp3Song.fm).mp3" ></audio>
+				<!-- Music Duration -->
+				<div id="music-duration-time">
+					1.39
+					<div class="inline-block" id="music-duration">
+						<div id="music-duration-completed">
+							<div id="music-pointer"></div>
+						</div>
+					</div>
+					4.44
+				</div>
+			</div>
+		</div>
+
+		<!-- Bottom player - Aside properties -->
+		<div id="bottom-music-player-aside" class="inline-block">
+			<i class="fas fa-bars"></i>
+			<i class="fas fa-headphones"></i>
+			<i class="fas fa-volume-up"></i>
+			<!-- Volume settings -->
+			<div class="inline-block" id="volume-tab">
+				<div id="volume">
+					<div id="volume-pointer"></div>
+				</div>
+			</div>
+			<i class="fas fa-arrows-alt-h"></i>
+		</div>
+	</footer>
+</body>
+</html>

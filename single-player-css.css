@@ -1,0 +1,131 @@
+:root{
+	--background-color-blue:#040430;
+	--text-color-white:white;
+}
+/* section */
+/* single-player-content */
+#single-player-content{
+	height:50vh;
+	background-color:#1d2f57;
+}
+/* single-player poster */
+#single-player-poster{
+	background-image:url('https://th.bing.com/th/id/OIP.qGj1dy1IkE9omdsCzAQBQAAAAA?pid=ImgDet&rs=1');
+	width:40%;
+}
+/* single-player-describe */
+#single-player-describe{
+	color:lightgrey;
+	width:60%;
+	padding:5%;
+	font-size:80%;
+}
+/* single-player-describe followers*/
+#followers{
+	color:var(--text-color-white);
+	margin-bottom:0%;
+}
+#followers span{
+	font-size:80%;
+	float:right;
+}
+/* single-player-describe play all button */
+#play-all{
+	background-image:linear-gradient(to right,darkblue,#b148b1);
+	border:none;
+	color:var(--text-color-white);
+	margin-top:4%;
+	padding:3% 10%;
+}
+
+#play-all:hover{
+	opacity:50%;
+}
+/* single-player-describe - "Follow" button */
+#follow{
+	background-color:transparent;
+	border:none;
+	color:var(--text-color-white);
+	margin-top:4%;
+	margin-left:10%;
+}
+
+/* Single-player-playlist */
+/* Single player playlist-list */
+#playlist-component{
+	display: flex;
+	flex-direction:column;
+	list-style:inside decimal-leading-zero;
+	padding:0%;
+}
+#playlist-component li{
+	height:4.5vh;
+	font-size:80%;
+	color:lightgrey;
+	background-image:linear-gradient(#4a4a60,black 180%);
+	margin-top:2%;
+	padding:1%;
+}
+#playlist-component li img{
+	height:100%;
+	width:auto;
+	margin-right:5%;
+}
+
+/* Aside */
+/* Similar Artists */
+#similar-artists{
+	list-style-type: none;
+	padding:0%;
+}
+#similar-artists li{
+	margin:5% 0%;
+}
+/* Song Image div */
+.similar-artists-1{
+	height:auto;
+	width:35%;
+	background-image: url('https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1');
+	background-size: cover;
+}
+.play-button-1{
+	position:absolute;
+	display:none;
+	border:none;
+	background-color:transparent;
+	transform:translate(100%,250%);
+}
+.play-button-1 i{
+	color:var(--text-color-white);
+}
+.similar-artists-1:hover #play{
+	display:block;
+}
+
+/* Song Description */
+.onism-dec{
+	width:70%;
+	margin:6%;
+}
+/* other options */
+.Onism-button-1:hover+.dropdown-content{
+	display:block;
+	background-color:var(--text-color-white);
+	color:black;
+}
+/* other options-dropdown */
+.dropdown-content{
+	width:12%;
+	list-style: none;
+	display:none;
+	position: absolute;
+	padding: 0%;
+}
+.dropdown-content li{
+	padding:1%;
+	border-bottom: 1px solid lightgrey;
+}
+.dropdown-content li i{
+	color:lightgrey;
+	padding:5%;
+}

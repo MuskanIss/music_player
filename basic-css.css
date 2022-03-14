@@ -1,0 +1,265 @@
+/* variable for background color and text color */
+:root{
+	--background-color-blue:#040430;
+	--text-color-white:white;
+}
+
+
+/* SOME BASIC CLASSES USED */ 
+.inline-block{
+	display:inline-block;
+}
+.box-shadow{
+	box-shadow: 0px 5px 5px black;
+}
+.flex{
+	display:flex;
+}
+.float-right{
+	float:right;
+}
+.margin-1{
+	margin:1%;
+}
+.w-30{
+	width:30%;
+}
+.flex-row-center{
+	display:flex;
+	flex-direction:row;
+	text-align:center;
+	justify-content:space-around;
+}
+
+/* BODY */
+body{
+	background-color:var(--background-color-blue);
+	color:var(--text-color-white);
+}
+
+/* NAVIGATION BAR */
+#navbar{
+	height:8vh;
+	margin:1% 2%;
+	text-align:left;
+}
+#navbar div{
+	margin:1%;
+}
+
+/* navigation -logo */ 
+#logo{
+	margin-top:0%;
+	width:25%;
+}
+#logo img{
+	width:100%;
+	height:auto;
+}
+/* navigation -title */
+#head-fav{
+	width:100%;
+}
+/* navigation - search section */
+#search *{
+	margin-top:1%;
+	background-color:#1d2f57;
+	border:none;
+	color:var(--text-color-white);
+}
+#lens{
+	border-radius:20% 0% 0% 20%;
+}
+#microphone{
+	border-radius:0% 20% 20% 0%;
+}
+/* navigation - notification */
+#red-notification{
+	z-index:1;
+	left:88.5%;
+	top:2%;
+	position:absolute;
+	width:0.3rem;
+	height:0.3rem;
+	background-color:red;
+	border-radius:50%;
+}
+#notification button{
+	font-size: 125%;
+	background-color:var(--background-color-blue);
+	color:var(--text-color-white);
+	border:none;
+}
+/* navigation - profile photo */
+#profile-photo{
+	width:8%;
+}
+#profile-photo img{
+	height:auto;
+	width:100%;
+	border-radius:50%;
+}
+
+/* MAIN SECTION */
+
+section{
+	padding:2% 3% 8% 5%;
+	width:60%;
+}
+
+/* ASIDE */
+aside{
+	margin-right: 5%;
+	vertical-align: top;
+	width:25%;
+}
+
+/* Aside section - Queue dropdown */
+#queue-dropdown{
+	color:lightgreen;
+	font-size:60%;
+}
+.queue-dropdown-content{
+	width:10%;
+	list-style: none;
+	display:none;
+	position: absolute;
+	padding: 0%;
+}
+.queue-dropdown-content li{
+	padding:2%;
+	border-bottom: 1px solid lightgrey;
+}
+#queue-dropdown i:hover+.queue-dropdown-content{
+	display:block;
+	background-color:var(--text-color-white);
+	color:black;
+}
+
+/* List contents for songs */
+#list-contents{
+	flex-direction:column;
+	text-align:left;
+	justify-content:left;
+	list-style:decimal-leading-zero;
+	height:70vh;
+	overflow-y:scroll;
+}
+#list-contents::-webkit-scrollbar {
+	display: none;
+}
+#list-contents li{
+	align:center;
+	font-size:80%;
+	color:lightgrey;
+	margin:5% 0%;
+}
+#list-contents li img{
+	height:auto;
+	width:15%;
+	margin-right:5%;
+}
+.song-name{
+	color:var(--text-color-white);
+}
+
+/* FOOTER - BOTTOM MUSIC PLAYER */
+#bottom-music-player{
+	display:none;
+	position:fixed;
+	bottom:0;
+	width:100%;
+	height:10vh;
+	background-color:#333035;
+}
+
+/* Song Name and song controls */
+#bottom-music-player-section{
+	margin:1% 5%;
+	width:60%;
+}
+/* Song Name */
+#song-head{
+	margin:0% 2%;
+	width:32%;
+}
+#song-head img{
+	height:6vh;
+}
+
+/* Icons of heart and ban */
+#heart-ban{
+	color:lightgrey;
+}
+/* Icons for SONG control and music duration */
+#song-play{
+	width:60%;
+	color:lightgrey;
+}
+/* Icons for SONG control */
+#song-controls{
+	margin-left:30%;
+}
+#song-controls i{
+	padding:0% 2%;
+}
+
+/* music duration */
+#music-duration{
+	margin:0% 4%;
+	width:70%;
+	height:1vh;
+	background-color:darkgrey;
+	border-radius:25px;
+}
+#music-duration-completed{
+	border-radius:25px 0px 25px 25px;
+	width:50%;
+	height:1vh;
+	background-color:lightgreen;
+}
+#music-pointer{
+	position:absolute;
+	width:2vh;
+	height:2vh;
+	margin-left:12%;
+	margin-top:-0.25%;
+	background-color:var(--text-color-white);
+	border-radius:50%;
+	z-index:1;
+}
+/* Bottom music player aside section */
+#bottom-music-player-aside{
+	margin:2% 0%;
+	vertical-align: top;
+	width:23%;
+	color:lightgrey;
+}
+#bottom-music-player-aside i{
+	padding:0% 2%;
+}
+/* Volume settings */
+#volume-tab{
+	border-radius:25px;
+	width:40%;
+	height:1vh;
+	background-color:var(--text-color-white);
+}
+#volume{
+	border-radius:25px 0px 25px 25px;
+	width:50%;
+	height:1vh;
+	background-color:lightgreen;
+}
+#volume-pointer{
+	position:absolute;
+	width:1.5vh;
+	height:1.5vh;
+	margin-left:4%;
+	margin-top:-0.1%;
+	background-color:var(--text-color-white);
+	border-radius:50%;
+	z-index:1;
+}
+
+

@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Single Player</title>
+
+	<!-- Link for Font awesome icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	
+	<!-- Link for Basic css file -->
+	<link rel="stylesheet" type="text/css" href="basic-css.css">
+
+	<!-- Link for Single player(Page 2) css file -->
+	<link rel="stylesheet" type="text/css" href="single-player-css.css">
+
+	<!-- Link for javascipt file -->
+	<script src="basic-javascript.js"></script>
+</head>
+
+<!-- Body -->
+<!-- SinglePlayerDataExtract() function is called everytime it is loaded -->
+<body onload="SinglePlayerDataExtract()">
+
+	<!-- Navigation bar -->
+	<nav id="navbar" class="flex-row-center">
+
+		<!-- Logo -->
+		<div id="logo">
+			<img src="codingninja-logo.png">
+		</div>
+
+		<!-- Page Title - "Favourite" -->
+		<div id="head-fav">
+			Favourites
+		</div>
+
+		<!-- Search section -->
+		<div id="search" class="flex-row-center">
+			<button id="lens"><i class="fas fa-search"></i></button>
+			<input type="input" placeholder="search">
+			<button id="microphone"><i class="fas fa-microphone"></i></button>
+		</div>
+
+		<!-- Notification -->
+		<div id="notification">
+			<div id="red-notification"></div>
+			<button><i class="fas fa-bell"></i></button>
+		</div>
+
+		<!-- Profile Picture -->
+		<div id="profile-photo">
+			<img src="https://th.bing.com/th/id/OIP.mZrukojnJQoYH-qM5dhrAgHaHa?pid=ImgDet&rs=1">
+		</div>
+	</nav>
+
+	<!-- Main Section -->
+	<section class="inline-block">
+		<!-- Single player content -->
+		<div id="single-player-content" class="flex">
+			<!-- Single player poster -->
+			<div id="single-player-poster">
+			</div>
+			<!-- Single player describe -->
+			<div id="single-player-describe">
+				<h2 id="followers">
+					ColdPlay
+					<span>851 followers</span>
+				</h2>
+				<span>British Band</span>
+				<p>
+					Coldplay are a British rock band formed in London in 1996. Vocalist, rhythm guitarist and pianist Chris Martin, 
+					lead guitarist Jonny Buckland, bassist Guy Berryman, and drummer Will Champion met at University College London 
+					and began playing music together from 1996 to 1998,calling their name to Coldplay.
+				</p>
+				<button id="play-all">Play All</button>
+				<button id="follow">Follow</button>
+				<p>247 Tracks| 178 Albums</p>
+			</div>
+		</div>
+		<!-- Single player playlist -->
+		<div id="single-player-playlist">
+			<!-- Single player playlist-list -->
+			<ol id="playlist-component">
+				<!-- Single player song No. 1 -->
+				<li>
+					<!-- Single player song image -->
+					<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+					<!-- Single player song desc -->
+					<span class="song-desc inline-block">
+						<span class="song-name">Onism</span>
+						<br/>
+						<span>AUG 11,2017</span>
+					</span>
+					<!-- Icons for heart and + -->
+					<span class="float-right inline-block">
+						<i class="far fa-heart"></i>&nbsp;&nbsp;<i class="fas fa-plus"></i>
+					</span>
+				</li>
+				<!-- Single player song No. 2 -->
+				<li>
+					<!-- Single player song image -->
+					<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+					<!-- Single player song desc -->
+					<span class="song-desc inline-block">
+						<span class="song-name">Onism</span>
+						<br/>
+						<span>AUG 11,2017</span>
+					</span>
+					<!-- Icons for heart and + -->
+					<span class="float-right inline-block">
+						<i class="far fa-heart"></i>&nbsp;&nbsp;<i class="fas fa-plus"></i>
+					</span>
+				</li>
+				<!-- Single player song No. 3 -->
+				<li>
+					<!-- Single player song image -->
+					<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+					<!-- Single player song desc -->
+					<span class="song-desc inline-block">
+						<span class="song-name">Onism</span>
+						<br/>
+						<span>AUG 11,2017</span>
+					</span>
+					<!-- Icons for heart and + -->
+					<span class="float-right inline-block">
+						<i class="far fa-heart"></i>&nbsp;&nbsp;<i class="fas fa-plus"></i>
+					</span>
+				</li>
+				<!-- Single player song No. 4 -->
+				<li>
+					<!-- Single player song image -->
+					<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+					<!-- Single player song desc -->
+					<span class="song-desc inline-block">
+						<span class="song-name">Onism</span>
+						<br/>
+						<span>AUG 11,2017</span>
+					</span>
+					<!-- Icons for heart and + -->
+					<span class="float-right inline-block">
+						<i class="far fa-heart"></i>&nbsp;&nbsp;<i class="fas fa-plus"></i>
+					</span>
+				</li>
+				<!-- Single player song No. 5 -->
+				<li>
+					<!-- Single player song image -->
+					<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+					<!-- Single player song desc -->
+					<span class="song-desc inline-block">
+						<span class="song-name">Onism</span>
+						<br/>
+						<span>AUG 11,2017</span>
+					</span>
+					<!-- Icons for heart and + -->
+					<span class="float-right inline-block">
+						<i class="far fa-heart"></i>&nbsp;&nbsp;<i class="fas fa-plus"></i>
+					</span>
+				</li>
+				<!-- Single player song No. 6 -->
+				<li>
+					<!-- Single player song image -->
+					<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+					<!-- Single player song desc -->
+					<span class="song-desc inline-block">
+						<span class="song-name">Onism</span>
+						<br/>
+						<span>AUG 11,2017</span>
+					</span>
+					<!-- Icons for heart and + -->
+					<span class="float-right inline-block">
+						<i class="far fa-heart"></i>&nbsp;&nbsp;<i class="fas fa-plus"></i>
+					</span>
+				</li>
+				<!-- Single player song No. 7 -->
+				<li>
+					<!-- Single player song image -->
+					<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+					<!-- Single player song desc -->
+					<span class="song-desc inline-block">
+						<span class="song-name">Onism</span>
+						<br/>
+						<span>AUG 11,2017</span>
+					</span>
+					<!-- Icons for heart and + -->
+					<span class="float-right inline-block">
+						<i class="far fa-heart"></i>&nbsp;&nbsp;<i class="fas fa-plus"></i>
+					</span>
+				</li>
+				<!-- Single player song No. 8 -->
+				<li>
+					<!-- Single player song image -->
+					<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+					<!-- Single player song desc -->
+					<span class="song-desc inline-block">
+						<span class="song-name">Onism</span>
+						<br/>
+						<span>AUG 11,2017</span>
+					</span>
+					<!-- Icons for heart and + -->
+					<span class="float-right inline-block">
+						<i class="far fa-heart"></i>&nbsp;&nbsp;<i class="fas fa-plus"></i>
+					</span>
+				</li>
+			</ol>
+		</div>
+	</section>
+
+
+
+	<!-- Aside Section -->
+	<aside class="inline-block">
+		<!-- Similar Artists -->
+		<div>
+			<!-- Similar Artists-header -->
+			<h3>
+				Similar Artists
+				<span id="queue-dropdown" style="color:white">
+					View All
+				</span>
+			</h3>
+			<!-- Similar Artists elements -->
+			<ul id="similar-artists">
+				<li>
+					<!-- Similar Artists element No. 1 -->
+					<div class="flex">
+						<!-- Song Image div-->
+						<div class="similar-artists-1 box-shadow">
+							<button class="play-button-1" id="play" onclick="bottomMusicPlayer234()" >
+								<i class="fas fa-play"></i>
+							</button>
+						</div>
+						<!-- Song Description-->
+						<div class="onism-dec">
+							<span>Onism</span>
+							<div style="color:lightgrey">AUG 11,2017</div>
+						</div>
+						<!-- other options -->
+						<div class="w-30 float-right" style="width:20%">
+							<div class="Onism-button-1">
+								<i class="fas fa-ellipsis-h"></i>
+							</div>
+							<ul class="dropdown-content">
+								<li><i class="fas fa-play"></i>Play Now</li>
+								<li><i class="fas fa-plus"></i>Add To Queue</li>
+								<li><i class="fas fa-cart-plus"></i>Add To Favourites</li>
+								<li><i class="fas fa-info-circle"></i>Get Info</li>
+							</ul>
+							<div style="color:lightgrey">4:44</div>
+						</div>
+					</div>
+				</li>
+				<!-- Similar Artists element No. 2 -->
+				<li>
+					<div class="flex">
+						<!-- Song Image div-->
+						<div class="similar-artists-1 box-shadow">
+							<button class="play-button-1" id="play" onclick="bottomMusicPlayer234()" >
+								<i class="fas fa-play"></i>
+							</button>
+						</div>
+						<!-- Song Description-->
+						<div class="onism-dec">
+							<span>Onism</span>
+							<div style="color:lightgrey">AUG 11,2017</div>
+						</div>
+						<!-- other options -->
+						<div class="w-30 float-right" style="width:20%">
+							<div class="Onism-button-1">
+								<i class="fas fa-ellipsis-h"></i>
+							</div>
+							<ul class="dropdown-content">
+								<li><i class="fas fa-play"></i>Play Now</li>
+								<li><i class="fas fa-plus"></i>Add To Queue</li>
+								<li><i class="fas fa-cart-plus"></i>Add To Favourites</li>
+								<li><i class="fas fa-info-circle"></i>Get Info</li>
+							</ul>
+							<div style="color:lightgrey">4:44</div>
+						</div>
+					</div>
+				</li>
+				<!-- Similar Artists element No. 3 -->
+				<li>
+					<div class="flex">
+						<!-- Song Image div -->
+						<div class="similar-artists-1 box-shadow">
+							<button class="play-button-1" id="play" onclick="bottomMusicPlayer234()" >
+								<i class="fas fa-play"></i>
+							</button>
+						</div>
+						<!-- Song Description-->
+						<div class="onism-dec">
+							<span>Onism</span>
+							<div style="color:lightgrey">AUG 11,2017</div>
+						</div>
+						<!-- other options -->
+						<div class="w-30 float-right" style="width:20%">
+							<div class="Onism-button-1">
+								<i class="fas fa-ellipsis-h"></i>
+							</div>
+							<ul class="dropdown-content">
+								<li><i class="fas fa-play"></i>Play Now</li>
+								<li><i class="fas fa-plus"></i>Add To Queue</li>
+								<li><i class="fas fa-cart-plus"></i>Add To Favourites</li>
+								<li><i class="fas fa-info-circle"></i>Get Info</li>
+							</ul>
+							<div style="color:lightgrey">4:44</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+
+		<!-- Resently Played -->
+		<div>
+			<!-- Resently Played-header -->
+			<h3>
+				Resently Played
+				<span class="float-right" style="color:white;font-size:60%">
+					View All
+				</span>
+			</h3>
+			<!-- Resently Played elements -->
+			<ol id="list-contents" class="flex-row-center">
+			<!-- Resently Played element No. 1 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- Resently Played element No. 2 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- Resently Played element No. 3 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- Resently Played element No. 4 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- Resently Played element No. 5 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- Resently Played element No. 6 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- Resently Played element No. 7 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- Resently Played element No. 8 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li><!-- Resently Played element No. 9 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- Resently Played element No. 10 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- Resently Played element No. 11 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+			<!-- Resently Played element No. 12 -->
+			<li>	
+				<!-- Song Image -->
+				<img class="inline-block box-shadow" src="https://www.bing.com/th?id=AMMS_feca24ae537f3f5d8309c2f83bac3216&w=72&h=72&c=7&rs=1&qlt=80&cdv=1&dpr=1.5&pid=16.1">
+				
+				<!-- Song Description-->
+				<span class="inline-block song-desc">
+					<span class="song-name">Onism</span>
+					<br/>
+					<span>AUG 11,2017</span>
+				</span>
+
+				<!-- Icon of heart -->
+					<i class="far fa-heart float-right"></i>
+			</li>
+		</ol>
+	</aside>
+
+	<!-- Bottom Music Player -->
+	<footer id="bottom-music-player">
+		<!-- Song Name and song controls -->
+		<div id="bottom-music-player-section" class="inline-block">
+			<div id="song-head" class="inline-block">
+				<!-- Song Image -->
+				<img src="https://th.bing.com/th/id/OIP.SQvqW6zwylozA3VkXLM4fAHaHa?w=172&h=180&c=7&o=5&dpr=1.5&pid=1.7">
+				<!-- Song Description -->
+				<div class="inline-block">
+					<marquee width="100%" behavior="scroll" direction="left">Imagine By John </marquee>
+					<div style="color:lightgrey">John Lennon</div>
+				</div>
+				<!-- Icons of heart and Ban -->
+				<div class="inline-block float-right" id="heart-ban">
+					<i class="far fa-heart"></i>&nbsp;<i class="fas fa-ban"></i>
+				</div>
+			</div>
+			<!-- Icons for SONG control and music duration-->
+			<div id="song-play" class="inline-block">
+				<!-- Icons for SONG control -->
+				<div id="song-controls">
+					<i class="fas fa-random"></i>
+					<i class="fas fa-step-backward"></i>
+					<i class="far fa-pause-circle"></i>
+					<i class="fas fa-step-forward"></i>
+					<i class="fas fa-sync"></i>
+				</div>
+				<!-- Music Duration -->
+				<div id="music-duration-time">
+					1.39
+					<div class="inline-block" id="music-duration">
+						<div id="music-duration-completed">
+							<div id="music-pointer"></div>
+						</div>
+					</div>
+					4.44
+				</div>
+			</div>
+		</div>
+
+		<!-- Aside properties -->
+		<div id="bottom-music-player-aside" class="inline-block">
+			<i class="fas fa-bars"></i>
+			<i class="fas fa-headphones"></i>
+			<i class="fas fa-volume-up"></i>
+			<!-- Volume settings -->
+			<div class="inline-block" id="volume-tab">
+				<div id="volume">
+					<div id="volume-pointer"></div>
+				</div>
+			</div>
+			<i class="fas fa-arrows-alt-h"></i>
+		</div>
+	</footer>
+</body>
+</html>
